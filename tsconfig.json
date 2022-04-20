@@ -1,0 +1,11 @@
+//moduleResolution はモジュールの解決方法
+//outDirは出力先のディレクトリパス
+//targetは出力対象となるJSのバージョン
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "target": "ES2015",
+    "jsx": "react",
+  }
+}
