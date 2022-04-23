@@ -17,7 +17,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['.js','.ts','.tsx'],
+    extensions: ['','.js','.ts','.tsx'],
   },
   //webpack.config.jsの置いてあるディレクトリにあるdistというディレクトリに対して、ファイル名をindex.jsで出力する。
   //変換する際にはJavaScript内に書かれている相対パスのリソースへ自動的にdist/を追加する
@@ -25,5 +25,10 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
     publicPath: 'dist/',
+  },
+  devServer: {
+    publicPath: '/dist/',
+    hot: true,
+    open: true,
   }
 }
